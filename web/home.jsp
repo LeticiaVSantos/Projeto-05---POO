@@ -4,8 +4,8 @@
 <html>
     <head>
         
-        <link rel="icon" href="Imagens/favicon.ico">
-        
+        <link rel="icon"  href="Imagens/favicon_1.ico">
+    
         <link rel="stylesheet" href="css/css.css" type="text/css"/>
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -17,13 +17,14 @@
         <title>Power Quiz</title>
         
     </head>
+    
     <body>
         
         <nav class="navbar">
             <a class="font_nav" class="navbar-brand" href="home.jsp">
                 
              <h2>
-               <img src="Imagens/quiz-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+               <img src="Imagens/quiz-icon.png" width="35" height="35" class="d-inline-block align-top" alt="">
                Power Quiz
                
              </h2>
