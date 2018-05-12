@@ -43,17 +43,24 @@
     
     <body>
         
-        <%@include file="WEB-INF/jspf/navbar.jspf" %>
+        <%@include file="WEB-INF/jspf/navbar.jspf" %> 
+        
     <center>
-        <a href="home.jsp"><button type="submit">Sair</button></a>
         
-        <p>Seja bem-vindo ao Power Quiz <%= session.getAttribute("loginUser") %></p><br>
+        <a href="home.jsp"><button type="button" class="btn btn-primary">Sair</button></a>
         
-        <p>Para realizar o teste, clique aqui: </p>
+        <br><br>
+        
+        <h4 class="font">Seja bem-vindo ao Power Quiz <%= session.getAttribute("loginUser") %></h4><br>
+        
+        <h4 class="font">Para realizar o teste, clique aqui: </h4> <br>
         
         <h3 class="text-center"><a href="quiz.jsp"><button type="button" class="btn btn-primary">Realizar Teste</button></a></h3>
         
-    </center>    
+        <br>
+        
+    </center>   
+    
         <%@include file="WEB-INF/jspf/footer.jspf" %>
         
     </body>

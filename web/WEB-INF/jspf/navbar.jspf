@@ -4,9 +4,10 @@
 <nav class="navbar">
     <a class="font_nav" class="navbar-brand" navbar-fixed-top href="home.jsp">
     <h2>
-       <img src="Imagens/quiz-icon.png" width="35" height="35" class="d-inline-block align-top" alt="">
+       <img src="Imagens/power.png" width="35" height="35" class="d-inline-block align-top" alt="">
        Power Quiz
     </h2>
     </a>
 </nav>
+
 <!-- Fim Navbar -->

@@ -12,16 +12,28 @@
     <body>
         <%@include file="WEB-INF/jspf/navbar.jspf" %>
         
+        <br><br>
+        
         <form method="post" action="SaveName.jsp">
          
          <center>
-                Login:
+             
+             <h4 class="font">Entre com seu login corretamente para acessar o Quiz</h4> 
+             <br><br>
+             
+             <div class="card" style="width: 30rem;">
+             <div class="card-body">
+             
+             <h5 class="font" class="card-title">Login:</h5>
+                
                 <table>
                     <tr>
                     <td><input type="text" name="username" id="username" class="form-control" required><br></td>
                     </tr>
                 </table>
                 <input type="submit" class="btn btn-primary" name="entrar" value="Entrar">
+             </div>
+             </div>
             </center>
         </form>
          

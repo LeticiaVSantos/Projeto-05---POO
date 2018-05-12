@@ -17,7 +17,13 @@
         <%@include file="WEB-INF/jspf/navbar.jspf" %>
         
         <!-- CONTEÚDO AQUI -->
-        
+        <center>
+            
+        <div class="card" style="width: 43rem;">    
+        <div class="font">
+        <div class="card-body" >
+            
+             
         <%
         int flagSaida=0; 
         while(flagSaida <= 9){ 
@@ -25,6 +31,7 @@
         Question q = Quiz.getTest().get(k);
         
         if(q.getFlag() == true){ %>
+        
         <form action="NextPage.jsp">
             <label>Pergunta <%= k+1 %></label><br>
             <%= q.getQuestion() %><br>
@@ -42,15 +49,21 @@
         flagSaida++;
     }}
        %> 
-     <input type="submit" name="tested" value="enviar"/>
-             <hr>
-        </form>
-        
-        
-          
        
+       </div>
+       </div>
+        </div>
+      
+             <hr>
+             
+             <h3 class="text-center"><button type="submit" name="tested" class="btn btn-primary">Enviar</button></h3>
+             
+    </form>
+       
+        </center>
         
-        <h3 class="text-center"><button type="submit" name="tested" class="btn btn-primary">Enviar</button></h3>
+        
+        
         
         <%@include file="WEB-INF/jspf/footer.jspf" %>
         

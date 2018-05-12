@@ -7,7 +7,8 @@ public class Quiz {
         if (test == null){
             test = new ArrayList<>();
             // ADICIONAR QUESTÕES AQUI
-            test.add(new Question("O Chewbacca é co-piloto de qual nave em Star Wars? ", "Milennium Falcon", new String[]{"Star Destroyer","X-wing","Milennium Falcon"}, true));
+            
+            test.add(new Question("O Chewbacca é co-piloto de qual nave em Star Wars? ", "Milennium Falcon", new String[]{"Star Destroyer","X-wing","Milennium Falcon"}, true)); 
             test.add(new Question("Qual o planeta que o Mestre Yoda, se exilou, apos a queda dos Jedi ?", "Dagobah", new String[]{"Dagobah", "Tatoine", "Coruscant"},true));
             test.add(new Question("Qual o nome do de batismo de Darth Vander", "Anakin Skywalker", new String[]{"MIchel Temer","Anakin Skywalker","Mark Hamill"}, true));
             test.add(new Question("O que era feito com as Fitas de Video Game quando elas não funcionavam?", "Soprava as Fitas", new String[]{"Soprava as Fitas", "Limpava com alcool isopropilico","Desligava o video game e ia ter vida"}, true));
