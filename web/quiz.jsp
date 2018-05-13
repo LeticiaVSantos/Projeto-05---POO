@@ -36,7 +36,7 @@
             <label>Pergunta <%= k+1 %></label><br>
             <%= q.getQuestion() %><br>
             <% for(int j=0; j <q.getAlternatives().length;j++){ %>
-            <input type="radio" name="<%=  q.getQuestion()%>" value=" <%= q.getAlternatives()[j] %>"/>
+            <input type="radio" name="<%= q.getQuestion() %>" value="<%= q.getAlternatives()[j] %>"/>
             <%= q.getAlternatives()[j]%> <br>
             <% } %>
             <br><hr>

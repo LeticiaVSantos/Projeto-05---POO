@@ -53,6 +53,10 @@
         
         <h4 class="font">Seja bem-vindo ao Power Quiz, <b><%= session.getAttribute("loginUser") %></b></h4><br>
         
+        <%if (tested == true){%>
+            <h4 class="font">Sua nota no último teste foi de: <%= grade %>%</h4> <br>
+        <%}%>
+        
         <h4 class="font">Para realizar o teste, clique aqui: </h4> <br>
         
         <h3 class="text-center"><a href="quiz.jsp"><button type="button" class="btn btn-primary">Realizar Teste</button></a></h3>
