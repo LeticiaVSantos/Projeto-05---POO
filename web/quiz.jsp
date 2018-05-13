@@ -39,7 +39,7 @@
             <input type="radio" name="<%=  q.getQuestion()%>" value=" <%= q.getAlternatives()[j] %>"/>
             <%= q.getAlternatives()[j]%> <br>
             <% } %>
-            <br>
+            <br><hr>
              
 
         

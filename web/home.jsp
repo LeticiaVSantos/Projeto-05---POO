@@ -18,13 +18,13 @@
          
          <center>
              
-             <h4 class="font">Entre com seu login corretamente para acessar o Quiz</h4> 
+             <h4 class="font">Entre com seu nome para acessar o Quiz</h4> 
              <br><br>
              
              <div class="card" style="width: 30rem;">
              <div class="card-body">
              
-             <h5 class="font" class="card-title">Login:</h5>
+             <h5 class="font" class="card-title">Nome:</h5>
                 
                 <table>
                     <tr>

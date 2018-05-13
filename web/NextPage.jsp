@@ -51,7 +51,7 @@
         
         <br><br>
         
-        <h4 class="font">Seja bem-vindo ao Power Quiz <%= session.getAttribute("loginUser") %></h4><br>
+        <h4 class="font">Seja bem-vindo ao Power Quiz, <b><%= session.getAttribute("loginUser") %></b></h4><br>
         
         <h4 class="font">Para realizar o teste, clique aqui: </h4> <br>
         

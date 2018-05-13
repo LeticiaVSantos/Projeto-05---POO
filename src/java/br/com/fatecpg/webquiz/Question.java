@@ -2,18 +2,14 @@ package br.com.fatecpg.webquiz;
 
 public class Question {
     private String question, answer, alternatives[];
-    private boolean flag;
+    private boolean flag;    
     
-        
-    
-        public Question(String question, String answer, String[] alternatives, boolean flag) {
+    public Question(String question, String answer, String[] alternatives, boolean flag) {
         this.question = question;
         this.answer = answer;
         this.alternatives = alternatives;
         this.flag = flag;
     }
-
-    
 
     public String getQuestion() { return question; }
     public void setQuestion(String question) { this.question = question; }
@@ -29,6 +25,4 @@ public class Question {
     public void setFlag(boolean flag) {
         this.flag = flag;
     }
-    
-
 }
