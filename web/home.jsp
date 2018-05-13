@@ -1,5 +1,19 @@
+<%@page import="br.com.fatecpg.webquiz.Quiz"%>
+<%@page import="br.com.fatecpg.webquiz.Question"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<% /*  
+    
+    if (request.getParameter("tested")!=null){        
+    
+        for(int i=0; i<Quiz.getTest().size(); i++){   
+        Question q = Quiz.getTest().get(i);
+        q.setFlag(true);
+        Quiz.getTest().set(i , q);
+        
+        }
+    }*/
+    %>
 <html>
     <head>
         

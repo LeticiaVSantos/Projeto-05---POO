@@ -9,7 +9,14 @@
 
 <%
     boolean tested = false;
-    
+    if(request.getParameter("tested") ==null){
+         for(int i=0; i<Quiz.getTest().size(); i++){   
+        Question q = Quiz.getTest().get(i);
+        q.setFlag(true);
+        Quiz.getTest().set(i , q);
+        
+        }
+    }
     double grade = 0.0;
     
     if(request.getParameter("tested") !=null){
@@ -54,15 +61,17 @@
         <h4 class="font">Seja bem-vindo ao Power Quiz, <b><%= session.getAttribute("loginUser") %></b></h4><br>
         
         <%if (tested == true){%>
-            <h4 class="font">Sua nota no último teste foi de: <%= grade %>%</h4> <br>
+            <h4 class="font" >Sua nota no último teste foi de: <%= grade %>%</h4> <br>
+            <h3 class="text-center"><a href="home.jsp"><button type="button" class="btn btn-primary">Realizar Teste</button></a></h3>
+
         <%}%>
-        
+        <% if(tested == false){ %>
         <h4 class="font">Para realizar o teste, clique aqui: </h4> <br>
         
         <h3 class="text-center"><a href="quiz.jsp"><button type="button" class="btn btn-primary">Realizar Teste</button></a></h3>
         
         <br>
-        
+        <%} %>
     </center>   
     
         <%@include file="WEB-INF/jspf/footer.jspf" %>
