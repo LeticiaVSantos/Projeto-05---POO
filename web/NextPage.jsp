@@ -46,8 +46,25 @@
     <body>
         <%@include file="WEB-INF/jspf/navbar.jspf" %>
         <center>
-            <a href="home.jsp"><button type="button" class="btn btn-primary">Sair</button></a>
+            <a href="SaveName.jsp"><button type="button" class="btn btn-primary">Sair</button></a>
             <br><br>
+            
+            <form method="post" action="SaveName.jsp">
+            <center>
+                <h4 class="font">Entre com seu nome para acessar o Quiz</h4> 
+                <br><br>
+                <div class="card" style="width: 30rem;">
+                    <div class="card-body">
+                    <h5 class="font" class="card-title">Nome:</h5>
+                    <input type="text" name="username" id="username" class="form-control" required><br>
+                    <input type="submit" class="btn btn-primary" name="entrar" value="Entrar">
+                    </div>
+                </div>
+            </center>
+        </form>
+            
+            <br><br>
+            
             <h4 class="font">Seja bem-vindo ao Power Quiz, <b><%= session.getAttribute("loginUser") %></b></h4><hr>
             
             <h4 class="font">Resultados mais recentes (todos):</h4><br>
@@ -117,13 +134,13 @@
             <%	int count2 = 0;
                 double soma = 0.0;
                 for (int i = 0; i < historico.size(); i++){
-                    if (historico.get(i)[0] == session.getAttribute("userLogin")){
+                    if (historico.get(i)[0] == session.getAttribute("loginUser")){
                         count2++;
                         soma += Double.parseDouble(historico.get(i)[1]);
                     }
                 }
             %>
-            <h4 class="font">Sua média de acertos é de: <b><%= (soma / (double) (count2)) %>%</b></h4><hr>
+            <h4 class="font">Sua média de acertos é de: <b><%= (soma / count2) %>%</b></h4><hr>
             <% if (tested == true){ %>
                 <h4 class="font" >Sua nota no último teste foi de: <%= grade %>%</h4> <br>
                 <h3 class="text-center"><a href="quiz.jsp"><button type="button" class="btn btn-primary">Realizar Teste</button></a></h3>
