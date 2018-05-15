@@ -13,16 +13,4 @@ public class User {
     public void setUsername(String Username) {
         this.Username = Username;
     }
-    
-    public void recordPontos(double media){
-        pontos.add(media);
-    }
-    
-    public double getMedia(){
-        double soma = 0.0;
-        for (int i = 0; i < pontos.size(); i++){
-            soma += pontos.get(i);
-        }
-        return soma / (double) (pontos.size());
-    }
 }
