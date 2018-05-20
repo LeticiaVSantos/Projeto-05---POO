@@ -38,6 +38,7 @@
     ArrayList<String[]> historico = Bd.getHistorico();
 %>
 <html>
+    
     <head>
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
